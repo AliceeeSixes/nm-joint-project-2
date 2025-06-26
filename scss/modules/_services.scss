@@ -1,0 +1,103 @@
+.services {
+    background-color: $color-primary;
+    color: $color-background;
+    padding: 16px 0;
+    margin-top: 16px;
+
+    .services-title {
+        display: flex;
+        flex-direction: column;
+        @media (min-width: $breakpoint-small) {
+            flex-direction: row;
+            gap: 32px;
+        }
+            gap: 16px;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 16px;
+
+        h2 {
+            flex: fit-content 0 0;
+            font-size: 1.5rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid $color-background;
+            margin: 0;
+        }
+        p {
+            flex: 1px 1 1;
+            font-size: 1rem;
+            margin: 0;
+        }
+    }
+
+    .services-cards {
+        display: flex;
+        flex-direction: column;
+        @media (min-width: $breakpoint-small) {
+            flex-direction: row;
+        }
+        justify-content: space-between;
+        gap: 20px;
+        a {
+            flex: 1 1 30%;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            text-decoration: none;
+            transition: .5s ease;
+            top: 0px;
+            &:hover {
+                top: -8px;
+            }
+
+
+            img {
+                // flex: 0 0 128px;
+                // min-width: 0px;
+                // align-self: stretch;
+                width: 100%;
+                flex: none;
+                height: 156px;
+                object-fit: cover;
+                aspect-ratio: auto;
+
+            }
+
+            .service-description {
+                flex: 2 0 2px;
+                min-width: 0px;
+                color: $color-secondary;
+                background-color: $color-background;
+                padding: 12px;
+                text-align: center;
+
+                h3 {
+                    margin: 32px 0 0 0;
+                    text-transform: uppercase;
+                }
+
+            }
+
+            .service-icon {
+                background-color: $color-secondary;
+                position: absolute;
+                top: 120px;
+                align-self: center;
+
+                border-radius: 50%;
+                width: 4rem;
+                height: 4rem;
+
+                &::before {
+                    display: block;
+                    position: absolute;
+                    color: $color-background;
+                    font-size: 2rem;
+                    left: 50%;
+                    top: 50%;
+                    translate: (-50% -50%);
+                }
+            }
+        }
+    }
+}
