@@ -1,0 +1,18 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    padding-left: 5vw;
+    padding-right: 5vw;
+
+    margin-right: auto;
+    margin-left: auto;
+    // maybe fixed sizes with media queries?
+
+}
