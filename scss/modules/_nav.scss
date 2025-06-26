@@ -1,0 +1,149 @@
+@import '../base/colours';
+
+.navbar-container {
+  padding: 0 2rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $color-white;
+  position: relative;
+  z-index: 100;
+}
+
+.navbar__logo a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.navbar__logo--bold { color: $color-secondary; }
+.navbar__logo--highlight { color: $color-primary; }
+
+.navbar__desktop-links,
+.navbar__contact--desktop {
+  display: none;
+}
+
+.navbar__hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 2rem;
+  height: 2rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 1001;
+}
+
+.navbar__hamburger span {
+  width: 2rem;
+  height: 0.25rem;
+  background: $color-secondary;
+  border-radius: 10px;
+  transition: all 0.3s linear;
+  position: relative;
+  transform-origin: 1px;
+}
+
+.navbar__sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100vh;
+  background-color: $color-white;
+  padding: 4rem 2rem;
+  transition: left 0.3s ease-in-out;
+  z-index: 1000;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+}
+.navbar__sidebar--open {
+  left: 0;
+}
+
+.navbar__links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.navbar__links a {
+  text-decoration: none;
+  color: $color-secondary;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+body.no-scroll {
+  overflow: hidden;
+}
+
+@media (min-width: 906px) {
+  .navbar-container {
+    padding: 0 4rem;
+  }
+  .navbar__hamburger,
+  .navbar__sidebar {
+    display: none;
+  }
+  .navbar__desktop-links {
+    display: flex;
+    gap: 2rem;
+  }
+  .navbar__desktop-links a {
+    text-decoration: none;
+    color: $color-secondary;
+    font-weight: bold;
+  }
+  .navbar__contact--desktop {
+    display: block;
+  }
+  .navbar__contact-btn {
+    display: flex;
+    align-items: center;
+    background: $color-primary;
+    color: $color-white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .navbar__phone-icon {
+    display: inline-block;
+    margin-right: 0.5rem;
+  }
+}
+
+@media (max-width: 974px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .navbar__logo {
+    order: -1;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+@media (min-width: 975px) {
+  .navbar {
+    flex-direction: row;
+    align-items: center;
+    gap: 0;
+  }
+  .navbar__logo {
+    order: 0;
+    margin-bottom: 0;
+    text-align: left;
+    width: auto;
+  }
+} 
