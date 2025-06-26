@@ -16,7 +16,7 @@ require "../inc/head.php";
                     <h3>Architecture</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Somnis iste natus.</p>
                 </div>
-                <div class="service-icon"></div>
+                <i class="service-icon fa fa-home"></i>
             </a>
             <a href="#">
                 <img src="img/placeholder.webp" alt>
@@ -24,7 +24,7 @@ require "../inc/head.php";
                     <h3>Construction</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Somnis iste natus.</p>
                 </div>
-                <div class="service-icon"></div>
+                <i class="service-icon fa fa-wrench"></i>
             </a>
             <a href="#">
                 <img src="img/placeholder.webp" alt>
@@ -32,7 +32,7 @@ require "../inc/head.php";
                     <h3>Installation</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Somnis iste natus.</p>
                 </div>
-                <div class="service-icon"></div>
+                <i class="service-icon fa fa-cogs"></i>
             </a>
         </div>
     </div>
