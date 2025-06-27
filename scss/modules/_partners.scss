@@ -1,0 +1,31 @@
+.partners {
+    padding: 16px 0;
+    margin-top: 16px;
+
+    h2 {
+        display: inline-block;
+        font-size: 1.5rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid $color-secondary;
+        margin: 0 0 16px;
+    }
+
+    #partners-row {
+        display: grid;
+        grid-auto-flow: column;
+        gap: 20px;
+        overflow: hidden;
+        height: 100px;
+
+        
+
+        .partner-img {
+            height: 100px;
+            aspect-ratio: auto;
+            filter: grayscale(100%);
+            &:hover {
+                filter: none;
+            }
+        }
+    }
+}

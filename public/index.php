@@ -3,6 +3,22 @@ $title = "Home - QualityBuilders";
 require "../inc/head.php";
 ?>
 
+<div class="partners">
+    <div class="container">
+        <h2>Our Partners</h2>
+    </div>
+    <div class="partners-slider">
+        <div class="slider-left"></div>
+        <div class="container" id="partners-row">
+            <img src="img/placeholder.webp" alt class="partner-img">
+            <img src="img/placeholder.webp" alt class="partner-img">
+            <img src="img/placeholder.webp" alt class="partner-img">
+            <img src="img/placeholder.webp" alt class="partner-img">
+        </div>
+        <div class="slider-right"></div>
+    </div>
+</div>
+
 <div class="services">
     <div class="container">
         <div class="services-title">

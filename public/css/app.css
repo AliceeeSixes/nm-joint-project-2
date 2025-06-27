@@ -2,7 +2,7 @@
 
 body { margin: 0; }
 
-.container { padding-left: 5vw; padding-right: 5vw; margin-right: auto; margin-left: auto; }
+.container { padding-left: 10vw; padding-right: 10vw; margin-right: auto; margin-left: auto; }
 
 i::before { font-family: 'FontAwesome'; }
 
@@ -33,3 +33,13 @@ i::before { font-family: 'FontAwesome'; }
 .services .services-cards a .service-icon { background-color: #0f1626; position: absolute; top: 120px; align-self: center; border-radius: 50%; width: 4rem; height: 4rem; }
 
 .services .services-cards a .service-icon::before { display: block; position: absolute; color: #fff; font-size: 2rem; left: 50%; top: 50%; translate: -50% -50%; }
+
+.partners { padding: 16px 0; margin-top: 16px; }
+
+.partners h2 { display: inline-block; font-size: 1.5rem; padding-bottom: 1rem; border-bottom: 1px solid #0f1626; margin: 0 0 16px; }
+
+.partners #partners-row { display: grid; grid-auto-flow: column; gap: 20px; overflow: hidden; height: 100px; }
+
+.partners #partners-row .partner-img { height: 100px; aspect-ratio: auto; filter: grayscale(100%); }
+
+.partners #partners-row .partner-img:hover { filter: none; }
