@@ -10,21 +10,6 @@
       <span></span>
     </button>
 
-    <div class="navbar__sidebar" id="navbarSidebar">
-      <ul class="navbar__links">
-        <li><a href="/public/index.php">ABOUT US</a></li>
-        <li><a href="#">SERVICES</a></li>
-        <li><a href="#">TESTIMONIALS</a></li>
-        <li><a href="/public/contact-us.php">CONTACT US</a></li>
-        <li class="navbar__contact">
-          <a class="navbar__contact-btn" href="tel:01234567890">
-            <i class="fa fa-phone-alt navbar__phone-icon"></i>
-            01234 567890
-          </a>
-        </li>
-      </ul>
-    </div>
-    
     <div class="navbar__desktop-links">
         <a href="/public/index.php">ABOUT US</a>
         <a href="#">SERVICES</a>
@@ -39,4 +24,32 @@
       </a>
     </div>
   </nav>
+</div>
+
+<!-- Sidebar Container -->
+<div class="sidebar-container" id="sidebarContainer">
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+  <div class="navbar__sidebar" id="navbarSidebar">
+    <div class="sidebar-header">
+      <div class="sidebar-logo">
+        <a href="/public/index.php"><span class="navbar__logo--bold">QUALITY</span><span class="navbar__logo--highlight">BUILDERS</span></a>
+      </div>
+      <button class="sidebar-close" id="sidebarClose" aria-label="Close navigation">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <ul class="navbar__links">
+      <li><a href="/public/index.php">ABOUT US</a></li>
+      <li><a href="#">SERVICES</a></li>
+      <li><a href="#">TESTIMONIALS</a></li>
+      <li><a href="/public/contact-us.php">CONTACT US</a></li>
+      <li class="navbar__contact">
+        <a class="navbar__contact-btn" href="tel:01234567890">
+          <i class="fa fa-phone-alt navbar__phone-icon"></i>
+          01234 567890
+        </a>
+      </li>
+    </ul>
+  </div>
 </div>
