@@ -38,8 +38,14 @@ i::before { font-family: 'FontAwesome'; }
 
 .partners h2 { display: inline-block; font-size: 1.5rem; padding-bottom: 1rem; border-bottom: 1px solid #0f1626; margin: 0 0 16px; }
 
-.partners #partners-row { display: grid; grid-auto-flow: column; gap: 20px; overflow: hidden; height: 100px; }
+.partners #partners-row { overflow-x: hidden; }
 
-.partners #partners-row .partner-img { height: 100px; aspect-ratio: auto; filter: grayscale(100%); }
+.partners #partners-row .slick-prev, .partners #partners-row .slick-next { position: absolute; }
+
+.partners #partners-row .slick-prev { left: calc(-16px + 10vw); }
+
+.partners #partners-row .slick-next { right: calc(-16px + 10vw); }
+
+.partners #partners-row .partner-img { height: 100px; object-fit: contain; width: auto; filter: grayscale(100%); }
 
 .partners #partners-row .partner-img:hover { filter: none; }

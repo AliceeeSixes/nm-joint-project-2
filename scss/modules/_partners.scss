@@ -11,17 +11,21 @@
     }
 
     #partners-row {
-        display: grid;
-        grid-auto-flow: column;
-        gap: 20px;
-        overflow: hidden;
-        height: 100px;
-
-        
+        overflow-x: hidden;
+        .slick-prev, .slick-next {
+            position: absolute;
+        }
+        .slick-prev {
+            left: calc(-16px + 10vw);
+        }
+        .slick-next {
+            right: calc(-16px + 10vw);
+        }
 
         .partner-img {
             height: 100px;
-            aspect-ratio: auto;
+            object-fit: contain;
+            width: auto;
             filter: grayscale(100%);
             &:hover {
                 filter: none;

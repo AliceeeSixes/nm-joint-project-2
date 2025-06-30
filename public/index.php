@@ -7,15 +7,14 @@ require "../inc/head.php";
     <div class="container">
         <h2>Our Partners</h2>
     </div>
-    <div class="partners-slider">
-        <div class="slider-left"></div>
-        <div class="container" id="partners-row">
+    <div class="container">
+        <div id="partners-row">
+            <img src="img/placeholder.webp" alt class="partner-img">
             <img src="img/placeholder.webp" alt class="partner-img">
             <img src="img/placeholder.webp" alt class="partner-img">
             <img src="img/placeholder.webp" alt class="partner-img">
             <img src="img/placeholder.webp" alt class="partner-img">
         </div>
-        <div class="slider-right"></div>
     </div>
 </div>
 
@@ -55,5 +54,7 @@ require "../inc/head.php";
 </div>
 
     <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/partners.js"></script>
 </body>
 </html>
