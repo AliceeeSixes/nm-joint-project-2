@@ -1,6 +1,7 @@
 <?php
 $title = "Home - QualityBuilders";
 require "../inc/head.php";
+require "hero-slider.php";
 ?>
 
 <div class="services">
