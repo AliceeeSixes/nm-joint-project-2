@@ -38,13 +38,17 @@ i::before { font-family: 'FontAwesome'; }
 
 .partners h2 { display: inline-block; font-size: 1.5rem; padding-bottom: 1rem; border-bottom: 1px solid #0f1626; margin: 0 0 16px; }
 
-.partners #partners-row { overflow-x: hidden; }
+.partners #partners-row { position: relative; }
 
-.partners #partners-row .slick-prev, .partners #partners-row .slick-next { position: absolute; }
+.partners #partners-row .slick-prev, .partners #partners-row .slick-next { position: absolute; border: none; background-color: #f3a100; border-radius: 50%; padding: 0; width: 32px; height: 32px; cursor: pointer; }
 
-.partners #partners-row .slick-prev { left: calc(-16px + 10vw); }
+.partners #partners-row .slick-prev:hover, .partners #partners-row .slick-next:hover { border: none; background-color: #df9300; }
 
-.partners #partners-row .slick-next { right: calc(-16px + 10vw); }
+.partners #partners-row .slick-prev { top: 34px; left: -48px; }
+
+.partners #partners-row .slick-next { top: 34px; right: -48px; }
+
+.partners #partners-row .slick-list { overflow-x: hidden; }
 
 .partners #partners-row .partner-img { height: 100px; object-fit: contain; width: auto; filter: grayscale(100%); }
 
