@@ -2,6 +2,7 @@
 body {
   font-family: "Roboto", sans-serif; }
 
+
 * {
   box-sizing: border-box; }
 
@@ -335,5 +336,43 @@ body.no-scroll {
     margin-bottom: 0;
     text-align: left;
     width: auto; } }
+
+#testimonials {
+  color: #0f1626; }
+  #testimonials h3 {
+    font-size: 1.7em;
+    width: fit-content; }
+  #testimonials h3::after {
+    margin: 5px 0;
+    width: 100%;
+    height: 1px;
+    content: "";
+    display: block;
+    position: relative;
+    bottom: 100%;
+    background: #0f1626; }
+  #testimonials blockquote {
+    font-size: 1.1em;
+    margin: 50px 0 10px;
+    position: relative; }
+    #testimonials blockquote::before {
+      top: -35px;
+      left: 0;
+      content: "\201C"; }
+    #testimonials blockquote::after {
+      bottom: -35px;
+      right: 0;
+      content: "\201D"; }
+    #testimonials blockquote::before, #testimonials blockquote::after {
+      height: fit-content;
+      position: absolute;
+      font-size: 50px;
+      font-weight: bold; }
+  #testimonials cite {
+    font-size: 1.2em;
+    font-style: normal; }
+    #testimonials cite span {
+      font-weight: bold; }
+
 
 /*# sourceMappingURL=app.css.map */

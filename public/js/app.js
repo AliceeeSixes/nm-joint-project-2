@@ -36,3 +36,17 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 }); 
+
+
+// === Slick carousel init === //
+
+// Testimonials //
+$("#testimonials-carousel").slick({
+  autoplay: true,
+  autoplaySpeed: 5000,
+  arrows: false,
+  dots: true,
+
+});
+
+// Add other carousel code here
