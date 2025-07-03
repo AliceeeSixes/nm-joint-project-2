@@ -37,7 +37,24 @@ require "../inc/header.php";
             </a>
         </div>
     </div>
+
 </div>
+
+<!-- Testimonials Section -->
+<section id="testimonials">
+    <div class="container">
+        <h3>Our Testimonials</h3>
+
+
+        <!-- TO-DO: Create Slick Slider -->
+        <div class="testimonial-quote">
+            <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae laborum laudantium officia natus et. Ab praesentium recusandae voluptatum et, sit, iure, minima eius voluptate earum vitae rem culpa aliquid delectus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae laborum laudantium officia natus et. Ab praesentium recusandae voluptatum et, sit, iure, minima eius voluptate earum vitae rem culpa aliquid delectus.</blockquote>
+            <cite>
+                <span>Aaron David,</span> Construction Manager
+            </cite>
+        </div>
+    </div>
+</section>
 
 <?php require "../inc/footer.php"; ?>
 
