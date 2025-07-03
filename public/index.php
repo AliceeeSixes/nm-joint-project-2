@@ -1,6 +1,7 @@
 <?php
 $title = "Home - QualityBuilders";
 require "../inc/head.php";
+require "../inc/header.php";
 ?>
 
 <div class="services">
@@ -37,6 +38,8 @@ require "../inc/head.php";
         </div>
     </div>
 </div>
+
+<?php require "../inc/footer.php"; ?>
 
 </body>
 </html>
