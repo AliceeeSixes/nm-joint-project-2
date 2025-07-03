@@ -1,7 +1,7 @@
 #testimonials {
     color: $color-secondary;
     h3 {
-        font-size: 1.5em;
+        font-size: 1.7em;
         width: fit-content;
     }
     h3::after {
@@ -16,6 +16,7 @@
     }
 
     blockquote {
+        font-size: 1.1em;
         margin: 50px 0 10px;
         position: relative;
         &::before {
@@ -38,6 +39,7 @@
     }
 
     cite {
+        font-size: 1.2em;
         font-style: normal;
         span {
             font-weight: bold;
