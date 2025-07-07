@@ -18,10 +18,9 @@
 
         h2 {
             flex: fit-content 0 0;
-            font-size: 1.5rem;
-            padding-bottom: 1rem;
-            border-bottom: 1px solid $color-background;
-            margin: 0;
+            &::after {
+                background: $color-background;
+            }
         }
         p {
             flex: 1px 1 1;
