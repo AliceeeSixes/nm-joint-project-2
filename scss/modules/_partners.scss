@@ -9,7 +9,7 @@
 
     #partners-row {
         position: relative;
-        .slick-prev, .slick-next {
+        .slick-arrow {
             position: absolute;
             border: none;
             background-color: $color-primary;
@@ -17,6 +17,7 @@
             padding: 0;
             width: 32px;
             height: 32px;
+            top: 50px;
             cursor: pointer;
             &:hover {
                 border: none;
@@ -29,11 +30,9 @@
             }
         }
         .slick-prev {
-            top: 34px;
             left: -48px;
         }
         .slick-next {
-            top: 34px;
             right: -48px;
         }
         .slick-list {

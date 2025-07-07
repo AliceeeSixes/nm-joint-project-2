@@ -97,15 +97,15 @@ body.no-scroll { overflow: hidden; }
 
 .partners #partners-row { position: relative; }
 
-.partners #partners-row .slick-prev, .partners #partners-row .slick-next { position: absolute; border: none; background-color: #f3a100; border-radius: 50%; padding: 0; width: 32px; height: 32px; cursor: pointer; }
+.partners #partners-row .slick-arrow { position: absolute; border: none; background-color: #f3a100; border-radius: 50%; padding: 0; width: 32px; height: 32px; top: 50px; cursor: pointer; }
 
-.partners #partners-row .slick-prev:hover, .partners #partners-row .slick-next:hover { border: none; background-color: #df9300; }
+.partners #partners-row .slick-arrow:hover { border: none; background-color: #df9300; }
 
-.partners #partners-row .slick-prev::before, .partners #partners-row .slick-next::before { display: block; font-size: 1.5rem; margin-top: 4px; }
+.partners #partners-row .slick-arrow::before { display: block; font-size: 1.5rem; margin-top: 4px; }
 
-.partners #partners-row .slick-prev { top: 34px; left: -48px; }
+.partners #partners-row .slick-prev { left: -48px; }
 
-.partners #partners-row .slick-next { top: 34px; right: -48px; }
+.partners #partners-row .slick-next { right: -48px; }
 
 .partners #partners-row .slick-list { overflow-x: hidden; }
 
