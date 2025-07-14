@@ -1,0 +1,48 @@
+#testimonials {
+    color: $color-secondary;
+    h3 {
+        font-size: 1.7em;
+        width: fit-content;
+    }
+    h3::after {
+        margin: 5px 0;
+        width: 100%;
+        height: 1px;
+        content: "";
+        display: block;
+        position: relative;
+        bottom: 100%;
+        background: $color-secondary;
+    }
+
+    blockquote {
+        font-size: 1.1em;
+        margin: 50px 0 10px;
+        position: relative;
+        &::before {
+            top: -35px;
+            left: 0;
+            content: "\201C";
+        }
+        &::after {
+            bottom: -35px;
+            right: 0;
+            content: "\201D";
+        }
+        &::before,
+        &::after {
+            height: fit-content;
+            position: absolute;
+            font-size: 50px;
+            font-weight: bold;
+        }
+    }
+
+    cite {
+        font-size: 1.2em;
+        font-style: normal;
+        span {
+            font-weight: bold;
+        }
+    }
+}

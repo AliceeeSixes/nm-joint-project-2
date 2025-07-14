@@ -1,7 +1,7 @@
 <?php
 $title = "Home - QualityBuilders";
 require "../inc/head.php";
-require "hero-slider.php";
+require "../inc/header.php";
 ?>
 
 <div class="services">
@@ -37,7 +37,50 @@ require "hero-slider.php";
             </a>
         </div>
     </div>
+
 </div>
 
+<!-- Testimonials Section -->
+<section id="testimonials">
+    <div class="container">
+        <h3>Our Testimonials</h3>
+
+
+        <!-- Slick Slider -->
+        <div id="testimonials-carousel">
+            <div class="testimonial-quote">
+                <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae laborum laudantium officia natus et. Ab praesentium recusandae voluptatum et, sit, iure, minima eius voluptate earum vitae rem culpa aliquid delectus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae laborum laudantium officia natus et. Ab praesentium recusandae voluptatum et, sit, iure, minima eius voluptate earum vitae rem culpa aliquid delectus.</blockquote>
+                <cite>
+                    <span>Aaron David,</span> Construction Manager
+                </cite>
+            </div>
+            <div class="testimonial-quote">
+                <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae laborum laudantium officia natus et. Ab praesentium recusandae voluptatum et, sit, iure, minima eius voluptate earum vitae rem culpa aliquid delectus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae laborum laudantium officia natus et. Ab praesentium recusandae voluptatum et, sit, iure, minima eius voluptate earum vitae rem culpa aliquid delectus.</blockquote>
+                <cite>
+                    <span>Aaron David,</span> Construction Manager
+                </cite>
+            </div>
+            <div class="testimonial-quote">
+                <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae laborum laudantium officia natus et. Ab praesentium recusandae voluptatum et, sit, iure, minima eius voluptate earum vitae rem culpa aliquid delectus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae laborum laudantium officia natus et. Ab praesentium recusandae voluptatum et, sit, iure, minima eius voluptate earum vitae rem culpa aliquid delectus.</blockquote>
+                <cite>
+                    <span>Aaron David,</span> Construction Manager
+                </cite>
+            </div>
+            <div class="testimonial-quote">
+                <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae laborum laudantium officia natus et. Ab praesentium recusandae voluptatum et, sit, iure, minima eius voluptate earum vitae rem culpa aliquid delectus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae laborum laudantium officia natus et. Ab praesentium recusandae voluptatum et, sit, iure, minima eius voluptate earum vitae rem culpa aliquid delectus.</blockquote>
+                <cite>
+                    <span>Aaron David,</span> Construction Manager
+                </cite>
+            </div>
+        </div>
+    </div>
+</section>
+
+<?php require "../inc/footer.php"; ?>
+
+    <!-- JS Includes -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/plugins/slick-1.8.1/slick/slick.min.js"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>
