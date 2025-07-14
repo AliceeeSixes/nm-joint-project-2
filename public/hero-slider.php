@@ -26,64 +26,34 @@ $slides = [
 ?>
 
 <div class="container">
-<section class="hero-slider">
+  <section class="hero-slider">
     <div class="hero-slider-container">
-        <?php foreach ($slides as $index => $slide): ?>
-            <div class="hero-slide">
-                <div class="hero-slide-image">
-                    <img src="<?php echo $slide['image']; ?>" alt="<?php echo $slide['title']; ?>">
-                </div>
-                <div class="hero-slide-content">
-                    <div class="container">
-                        <h2><?php echo $slide['title']; ?></h2>
-                        <p><?php echo $slide['description']; ?></p>
-                        <a href="<?php echo $slide['cta_link']; ?>" class="hero-cta"><?php echo $slide['cta_text']; ?></a>
-                    </div>
-                </div>
+      <?php foreach ($slides as $slide): ?>
+        <div class="hero-slide">
+          <div class="hero-slide-image-container">
+            <div class="hero-slide-image">
+              <img src="<?php echo $slide['image']; ?>" alt="<?php echo $slide['title']; ?>">
             </div>
-        <?php endforeach; ?>
+          </div>
+          <div class="hero-slide-overlay-container">
+            <div class="hero-slide-overlay">
+              <div class="hero-slide-content">
+                <h2><?php echo $slide['title']; ?></h2>
+                <p><?php echo $slide['description']; ?></p>
+                <a href="<?php echo $slide['cta_link']; ?>" class="hero-cta"><?php echo $slide['cta_text']; ?></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      <?php endforeach; ?>
     </div>
-    
-    <!-- Slick Slider Navigation -->
     <div class="hero-slider-nav">
-        <button class="hero-slider-prev" aria-label="Previous slide">
-            <i class="fa fa-chevron-left"></i>
-        </button>
-        <button class="hero-slider-next" aria-label="Next slide">
-            <i class="fa fa-chevron-right"></i>
-        </button>
+      <button class="hero-slider-prev" aria-label="Previous slide">
+        <i class="fa fa-chevron-left"></i>
+      </button>
+      <button class="hero-slider-next" aria-label="Next slide">
+        <i class="fa fa-chevron-right"></i>
+      </button>
     </div>
-</section>
-</div>
-
-<!-- Slick Slider CSS and JS -->
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
-<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
-<script>
-$(document).ready(function(){
-    $('.hero-slider-container').slick({
-        dots: true,
-        infinite: true,
-        speed: 500,
-        fade: true,
-        cssEase: 'linear',
-        autoplay: true,
-        autoplaySpeed: 5000,
-        arrows: true,
-        prevArrow: $('.hero-slider-prev'),
-        nextArrow: $('.hero-slider-next'),
-        responsive: [
-            {
-                breakpoint: 768,
-                settings: {
-                    arrows: false
-                }
-            }
-        ]
-    });
-});
-</script> 
+  </section>
+</div> 
