@@ -18,6 +18,7 @@
         height: 80vh;
         @media (max-width: 900px) {
           height: 50vh;
+          padding: 0;
         }
         @media (max-width: 600px) {
           height: 35vh;
@@ -116,6 +117,8 @@
       pointer-events: all;
       transition: background 0.2s, color 0.2s;
       box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      margin-left: 10px; 
+      margin-right: 10px;
       &:hover {
         background: #fff;
         color: #222;

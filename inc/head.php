@@ -17,3 +17,4 @@
     <title>$title</title>
 </head>
 <body>
+  <div class="main-container">

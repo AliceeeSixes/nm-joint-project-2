@@ -7,5 +7,6 @@ if (basename($_SERVER['SCRIPT_NAME']) === 'index.php') {
 }
 ?>
 <script src="js/app.js"></script>
+  </div>
 </body>
 </html>
