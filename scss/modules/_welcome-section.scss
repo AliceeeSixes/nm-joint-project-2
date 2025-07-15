@@ -1,0 +1,123 @@
+.welcome-section {
+  padding: 4rem 0;
+  background: #f8f8f8;
+
+  .welcome-container {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+
+    @media (max-width: 900px) {
+      flex-direction: column;
+      gap: 2rem;
+    }
+  }
+
+  .welcome-text,
+  .welcome-images {
+    flex: 1 1 350px;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    box-sizing: border-box;
+  }
+
+  .welcome-text {
+    h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+    .welcome-btn {
+      display: inline-block;
+      padding: 0.75rem 2rem;
+      background: #1a4d2e;
+      color: #fff;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.2s;
+      &:hover {
+        background: #2e8b57;
+      }
+    }
+  }
+
+  .welcome-images {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    .image-collage {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img {
+        width: 100%;
+        height: auto;
+        max-width: 400px;
+        max-height: 400px;
+        min-width: 200px;
+        min-height: 200px;
+        width: 100%;
+        aspect-ratio: 1 / 1;
+        height: auto;
+        object-fit: cover;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        border: 5px solid #f5a100;
+        
+        // Fallback for browsers that do not support aspect-ratio
+        @supports not (aspect-ratio: 1 / 1) {
+          height: 400px;
+          width: 400px;
+          max-width: 100%;
+          max-height: 100%;
+          position: relative;
+          display: block;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 902px) {
+    .welcome-images {
+      display: none;
+    }
+  }
+
+  @media (max-width: 900px) {
+    .welcome-text,
+    .welcome-images {
+      min-width: 0;
+      width: 100%;
+      align-items: center;
+      text-align: center;
+    }
+    .welcome-text {
+      align-items: center;
+      h2, p {
+        text-align: center;
+      }
+    }
+    .welcome-images .image-collage img {
+      max-width: 400px;
+      max-height: 400px;
+      min-width: 200px;
+      min-height: 200px;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+} 
