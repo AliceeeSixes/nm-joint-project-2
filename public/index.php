@@ -8,7 +8,7 @@ require "../inc/head.php";
 <body>
     <?php
     require "../inc/header.php";
-    require "hero-slider.php";
+    require "../inc/hero-slider.php";
     ?>
 
     <section class="welcome-section">
