@@ -5,6 +5,21 @@ require "../inc/header.php";
 require "hero-slider.php";
 ?>
 
+<section class="welcome-section">
+  <div class="container welcome-container">
+    <div class="welcome-text">
+      <h2>Welcome to <span class="navbar__logo--bold">QUALITY</span><span class="navbar__logo--highlight">BUILDERS</span></h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat pariatur.</p>
+      <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+      <a href="contact-us.php" class="welcome-btn">Get in Touch</a>
+    </div>
+    <div class="welcome-images">
+      <img src="img/Quality_Builders_Roofing-Collage.jpg" alt="Collage 1">
+</div>
+    </div>
+  </div>
+</section>
+
 <div class="partners">
     <div class="container">
         <h2>Our Partners</h2>
