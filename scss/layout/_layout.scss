@@ -30,3 +30,19 @@ body {
 i::before {
     font-family: 'FontAwesome';
 }
+
+
+h2 {
+    font-size: 1.7em;
+    width: fit-content;
+}
+h2::after {
+    margin: 5px 0;
+    width: 100%;
+    height: 1px;
+    content: "";
+    display: block;
+    position: relative;
+    bottom: 100%;
+    background: $color-secondary;
+}

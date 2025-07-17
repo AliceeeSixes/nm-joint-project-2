@@ -8,6 +8,10 @@ body { margin: 0; }
 
 i::before { font-family: 'FontAwesome'; }
 
+h2 { font-size: 1.7em; width: fit-content; }
+
+h2::after { margin: 5px 0; width: 100%; height: 1px; content: ""; display: block; position: relative; bottom: 100%; background: #0f1626; }
+
 .navbar-container { margin-top: 1rem; padding: 0 2rem; }
 
 .navbar { display: flex; justify-content: space-between; align-items: center; background-color: #fff; position: relative; z-index: 100; }
@@ -88,17 +92,19 @@ body.no-scroll { overflow: hidden; }
 
 .partners { padding: 16px 0; margin-top: 16px; }
 
-.partners h2 { display: inline-block; font-size: 1.5rem; padding-bottom: 1rem; border-bottom: 1px solid #0f1626; margin: 0 0 16px; }
+.partners h2 { display: inline-block; margin: 0 0 16px; }
 
 .partners #partners-row { position: relative; }
 
-.partners #partners-row .slick-prev, .partners #partners-row .slick-next { position: absolute; border: none; background-color: #f3a100; border-radius: 50%; padding: 0; width: 32px; height: 32px; cursor: pointer; }
+.partners #partners-row .slick-arrow { position: absolute; border: none; background-color: #f3a100; border-radius: 50%; padding: 0; width: 32px; height: 32px; top: 50px; cursor: pointer; }
 
-.partners #partners-row .slick-prev:hover, .partners #partners-row .slick-next:hover { border: none; background-color: #df9300; }
+.partners #partners-row .slick-arrow:hover { border: none; background-color: #df9300; }
 
-.partners #partners-row .slick-prev { top: 34px; left: -48px; }
+.partners #partners-row .slick-arrow::before { display: block; font-size: 1.5rem; margin-top: 4px; }
 
-.partners #partners-row .slick-next { top: 34px; right: -48px; }
+.partners #partners-row .slick-prev { left: -48px; }
+
+.partners #partners-row .slick-next { right: -48px; }
 
 .partners #partners-row .slick-list { overflow-x: hidden; }
 
@@ -112,7 +118,9 @@ body.no-scroll { overflow: hidden; }
 
 @media (min-width: 769px) { .services .services-title { flex-direction: row; gap: 32px; } }
 
-.services .services-title h2 { flex: fit-content 0 0; font-size: 1.5rem; padding-bottom: 1rem; border-bottom: 1px solid #fff; margin: 0; }
+.services .services-title h2 { flex: fit-content 0 0; }
+
+.services .services-title h2::after { background: #fff; }
 
 .services .services-title p { flex: 1px 1 1; font-size: 1rem; margin: 0; }
 
@@ -135,10 +143,6 @@ body.no-scroll { overflow: hidden; }
 .services .services-cards a .service-icon::before { display: block; position: absolute; color: #fff; font-size: 2rem; left: 50%; top: 50%; translate: -50% -50%; }
 
 #testimonials { color: #0f1626; }
-
-#testimonials h3 { font-size: 1.7em; width: fit-content; }
-
-#testimonials h3::after { margin: 5px 0; width: 100%; height: 1px; content: ""; display: block; position: relative; bottom: 100%; background: #0f1626; }
 
 #testimonials blockquote { font-size: 1.1em; margin: 50px 0 10px; position: relative; }
 
