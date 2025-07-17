@@ -5,6 +5,21 @@ require "../inc/header.php";
 require "hero-slider.php";
 ?>
 
+<div class="partners">
+    <div class="container">
+        <h2>Our Partners</h2>
+    </div>
+    <div class="container">
+        <div id="partners-row">
+            <img src="img/placeholder.webp" alt class="partner-img">
+            <img src="img/placeholder.webp" alt class="partner-img">
+            <img src="img/placeholder.webp" alt class="partner-img">
+            <img src="img/placeholder.webp" alt class="partner-img">
+            <img src="img/placeholder.webp" alt class="partner-img">
+        </div>
+    </div>
+</div>
+
 <div class="services">
     <div class="container">
         <div class="services-title">
@@ -80,8 +95,9 @@ require "hero-slider.php";
 <?php require "../inc/footer.php"; ?>
 
     <!-- JS Includes -->
-    <script src="js/jquery-3.7.1.min.js"></script>
-    <script src="js/plugins/slick-1.8.1/slick/slick.min.js"></script>
+    <script src="js/plugins/jquery-3.7.1.min.js"></script>
+    <script src="js/plugins/slick.min.js"></script>
     <script src="js/app.js"></script>
+    <script src="js/partners.js"></script>
 </body>
 </html>
