@@ -74,7 +74,7 @@ require "hero-slider.php";
 <!-- Testimonials Section -->
 <section id="testimonials">
     <div class="container">
-        <h3>Our Testimonials</h3>
+        <h2>Our Testimonials</h2>
 
 
         <!-- Slick Slider -->
