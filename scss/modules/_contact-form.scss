@@ -1,0 +1,50 @@
+#contact-form {
+    background: $color-primary;
+    padding: 20px;
+    form {
+        background: rgba(0,0,0,0.4);
+        color: white;
+        font-size: 1.2rem;
+
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+
+        width: 90%;
+        max-width: 800px;
+        gap: 10px;
+
+        padding: 10px;
+        border-radius: 8px;
+
+        div {
+            display: flex;
+            flex-direction: column;
+        }
+        div.narrow {
+            width: 100%;
+            @media (min-width: $breakpoint-xs) {
+                width: calc((100% - 10px)/2);
+            }
+        }
+        div.wide {
+            width: 100%
+        }
+        textarea, input {
+            font-size: 1rem;
+            resize: none;
+        }
+        button {
+            position: relative;
+            overflow: hidden;
+            margin: 5px auto;
+            padding: 5px 15px;
+            border-radius: 3px;
+            font-size: 1.2rem;
+            background: $color-secondary;
+            color: $color-background;
+            border: none;
+            cursor: pointer;
+        }
+    }
+}
