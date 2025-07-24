@@ -1,6 +1,11 @@
 #contact-form {
     background: $color-primary;
     padding: 20px;
+    h1 {
+        text-align: center;
+        text-decoration: underline;
+        margin: 10px 0 50px;
+    }
     form {
         background: rgba(0,0,0,0.4);
         color: white;
@@ -33,6 +38,9 @@
         textarea, input {
             font-size: 1rem;
             resize: none;
+        }
+        textarea {
+            height: 100px;
         }
         button {
             position: relative;

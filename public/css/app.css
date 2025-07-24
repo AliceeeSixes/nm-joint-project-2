@@ -573,6 +573,10 @@ body.no-scroll {
 #contact-form {
   background: #f3a100;
   padding: 20px; }
+  #contact-form h1 {
+    text-align: center;
+    text-decoration: underline;
+    margin: 10px 0 50px; }
   #contact-form form {
     background: rgba(0, 0, 0, 0.4);
     color: white;
@@ -598,6 +602,8 @@ body.no-scroll {
     #contact-form form textarea, #contact-form form input {
       font-size: 1rem;
       resize: none; }
+    #contact-form form textarea {
+      height: 100px; }
     #contact-form form button {
       position: relative;
       overflow: hidden;
