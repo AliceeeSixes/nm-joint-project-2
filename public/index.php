@@ -20,9 +20,10 @@ require "../inc/head.php";
             <a href="contact-us.php" class="welcome-btn">Get in Touch</a>
             </div>
             <div class="welcome-images">
-                <img src="img/Quality_Builders_Roofing-Collage.jpg" alt="Collage 1">
-            </div>
+        <div class="image-collage">
+          <img src="img/Quality_Builders_Roofing-Collage.jpg" alt="Quality Builders Roofing Work">
         </div>
+      </div>
     </div>
     </section>
 
