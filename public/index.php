@@ -11,7 +11,7 @@ require "../inc/head.php";
     require "../inc/hero-slider.php";
     ?>
 
-    <section class="welcome-section">
+    <section class="welcome-section"> <!-- Welcome Section -->
     <div class="container welcome-container">
         <div class="welcome-text">
             <h2>Welcome to <span class="navbar__logo--bold">QUALITY</span><span class="navbar__logo--highlight">BUILDERS</span></h2>
