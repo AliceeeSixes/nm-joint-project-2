@@ -23,6 +23,9 @@
                 if ($_SERVER["REQUEST_METHOD"] === "GET") {
                     $_SESSION["token"] = md5(uniqid(mt_rand(), true));
                 }
+
+                // DB Connection
+                require "../inc/database-connection.php";
             ?>
 
 
@@ -57,6 +60,8 @@
                         }
 
                         if ($valid) {
+                            // Submit message to DB
+                            storeMessage($fname, $lname, $email, $phone, $message, time());
                             // Form Submitted Popup
                             echo '<div id="form-success" class="form-popup"><button class="form-popup-close"><i class="fa fa-xmark"></i></button><div>';
                             echo 'Form submitted successfully';
