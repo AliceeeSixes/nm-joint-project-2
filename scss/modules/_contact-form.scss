@@ -13,7 +13,7 @@
 
         display: flex;
         flex-wrap: wrap;
-        margin: auto;
+        margin: 10px auto;
 
         width: 90%;
         max-width: 800px;
@@ -55,4 +55,34 @@
             cursor: pointer;
         }
     }
+}
+
+#form-error,
+#form-success {
+    padding: 5px;
+    position: relative;
+    width: 90%;
+    max-width: 800px;
+    border: 1px solid black;
+    border-radius: 8px;
+    margin: auto;
+    button {
+        padding: 0;
+        height: fit-content;
+        width: fit-content;
+        cursor: pointer;
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        background: transparent;
+        border: none;
+    }
+}
+
+#form-error {
+    background: rgb(255, 150, 150);
+}
+
+#form-success {
+    background: rgb(150, 255, 150);
 }
