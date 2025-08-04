@@ -58,6 +58,10 @@
                             $valid = false;
                             array_push($errors, "Last name is required");
                         }
+                        if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+                            $valid = false;
+                            array_push($errors, "Email is invalid");
+                        }
 
                         if ($valid) {
                             // Submit message to DB
