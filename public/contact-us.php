@@ -62,6 +62,14 @@
                             $valid = false;
                             array_push($errors, "Email is invalid");
                         }
+                        if (!$phone) {
+                            $valid = false;
+                            array_push($errors, "Phone number is required");
+                        }
+                        if (!$message) {
+                            $valid = false;
+                            array_push($errors, "Message is required");
+                        }
 
                         if ($valid) {
                             // Submit message to DB
@@ -102,27 +110,27 @@
 
                 <div class="narrow">
                     <label>First Name</label>
-                    <input name="first_name" />
+                    <input name="first_name" <?php if(!$valid) {echo "value='$fname'";} ?>/>
                 </div>
                 
                 <div class="narrow">
                     <label>Last Name</label>
-                    <input name="last_name" />
+                    <input name="last_name" <?php if(!$valid) {echo "value='$lname'";} ?>/>
                 </div>
 
                 <div class="narrow">
                     <label>Email Address</label>
-                    <input name="email" />
+                    <input name="email" <?php if(!$valid) {echo "value='$email'";} ?>/>
                 </div>
 
                 <div class="narrow">
                     <label>Phone Number</label>
-                    <input name="phone" />
+                    <input name="phone" <?php if(!$valid) {echo "value='$phone'";} ?>/>
                 </div>
 
                 <div class="wide">
                     <label>Message</label>
-                    <textarea name="message"></textarea>
+                    <textarea name="message"><?php if(!$valid) {echo "$message";} ?></textarea>
                 </div>
 
                 <button>Submit Form</button>
