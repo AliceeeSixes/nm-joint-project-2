@@ -11,7 +11,7 @@ require "../inc/head.php";
         require "../inc/hero-slider.php";
     ?>
 
-    <section class="welcome-section">
+    <section class="welcome-section"> <!-- Welcome Section -->
     <div class="container welcome-container">
         <div class="welcome-text">
             <h2>Welcome to <span class="navbar__logo--bold">QUALITY</span><span class="navbar__logo--highlight">BUILDERS</span></h2>
@@ -20,9 +20,10 @@ require "../inc/head.php";
             <a href="contact-us.php" class="welcome-btn">Get in Touch</a>
             </div>
             <div class="welcome-images">
-                <img src="img/Quality_Builders_Roofing-Collage.jpg" alt="Collage 1">
-            </div>
+        <div class="image-collage">
+          <img src="img/Quality_Builders_Roofing-Collage.jpg" alt="Quality Builders Roofing Work">
         </div>
+      </div>
     </div>
     </section>
 
