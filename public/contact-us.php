@@ -32,6 +32,7 @@
             <!-- Form Submit Code -->
             <?php
                 $request_method = strtoupper($_SERVER["REQUEST_METHOD"]);
+                $valid = true;
                 if ($request_method === "POST") {
                     // Get submitted values
                     $token = htmlspecialchars($_POST["token"]);
@@ -47,7 +48,6 @@
                         echo "CSRF Failed (try reloading the page)<br>";
                     } else {
                         // Validation
-                        $valid = true;
                         $errors = [];
 
                         if (!$fname) {
